@@ -1,0 +1,19 @@
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                                      http://www.springframework.org/schema/util
+                                       http://www.springframework.org/schema/util/spring-util.xsd">
+              
+              
+               <bean id="eng" class="com.ij.beans.engine"/>  
+              
+               <bean id="vi" class="com.ij.beans.vichel">         
+              
+               <property name="engid">
+               <idref bean="eng"/>
+               </property>
+                </bean>                        
+</beans>

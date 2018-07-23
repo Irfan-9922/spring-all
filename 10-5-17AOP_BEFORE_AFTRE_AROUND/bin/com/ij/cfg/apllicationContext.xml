@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="productbean" class="com.ij.service.product"></bean>
+<bean id="aroundadvice1" class="com.ij.aop.beforeadvice"></bean>
+<bean id="aroundadvice2" class="com.ij.aop.aroundadvice"></bean>
+<bean id="aroundadvice3" class="com.ij.aop.afteradvice"></bean>
+<bean id="make" class=" org.springframework.aop.framework.ProxyFactoryBean ">
+<property name="target" ref="productbean"></property>
+<property name="interceptorNames">
+<list>
+<value>aroundadvice1</value>
+<value>aroundadvice2</value>
+<value>aroundadvice3</value>
+</list>
+</property>
+</bean>
+</beans>

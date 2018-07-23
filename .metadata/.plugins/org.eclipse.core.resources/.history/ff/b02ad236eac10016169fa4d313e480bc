@@ -1,0 +1,30 @@
+package com.ij;
+
+import java.util.Calendar;
+
+public class test {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long start,end;
+		Calendar cal=Calendar.getInstance();
+		int start1=1992;
+		int current=cal.get(Calendar.YEAR);
+		System.out.println("your bate of birth::::"+start1);
+		System.out.println("your age is::"+current);
+		System.out.println("now your age is "+(current-start1));
+		start=System.currentTimeMillis();
+		System.out.println("hello this is demo");
+		try{
+			Thread.sleep(700);
+		}
+		catch(InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+   end=System.currentTimeMillis();
+   System.out.println("program takes time to exicute "+(end-start)+"seconds");
+	}
+
+}

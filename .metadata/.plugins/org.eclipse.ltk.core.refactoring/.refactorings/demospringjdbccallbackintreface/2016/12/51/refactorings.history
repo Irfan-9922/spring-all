@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;17-4-17 may demo on callbackinterface/src&apos;&#x0D;&#x0A;- Original project: &apos;demospringjdbccallbackintreface&apos;&#x0D;&#x0A;- Destination element: &apos;17-4-17 may demo on callbackinterface/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     demospringjdbccallbackintreface/src/test&#x0D;&#x0A;     demospringjdbccallbackintreface/src/com.ij.empdto&#x0D;&#x0A;     demospringjdbccallbackintreface/src/com.nt.cfgs&#x0D;&#x0A;     demospringjdbccallbackintreface/src/com.ij.empbo" description="Copy packages" destination="=17-4-17 may demo on callbackinterface/src" element1="/src&lt;test" element2="/src&lt;com.ij.empdto" element3="/src&lt;com.nt.cfgs" element4="/src&lt;com.ij.empbo" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1481668069398" version="1.0"/>
+</session>

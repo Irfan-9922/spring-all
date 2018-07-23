@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="me" class="com.ij.service.student"/>
+
+<bean id="dem" class="com.ij.aspect.Around_Advice"/>
+
+<bean id="around" class=" org.springframework.aop.framework.ProxyFactoryBean">
+<property name="target" ref="me"/>
+<property name="interceptorNames">
+<list>
+<value>dem</value>
+</list>
+</property>
+</bean>
+</beans>

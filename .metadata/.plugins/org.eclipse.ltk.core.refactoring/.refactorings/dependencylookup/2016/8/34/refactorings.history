@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;AppContext.xml&apos; to &apos;1(depnedency lookup)/src/com.in.cfg&apos;&#x0D;&#x0A;- Original project: &apos;dependencylookup&apos;&#x0D;&#x0A;- Destination element: &apos;1(depnedency lookup)/src/com.in.cfg&apos;&#x0D;&#x0A;- Original element: &apos;AppContext.xml&apos;" description="Copy file" destination="=1\(depnedency lookup)/src&lt;com.in.cfg" element1="src/com/ij/cfg/AppContext.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1471593224106" units="0" version="1.0"/>
+</session>

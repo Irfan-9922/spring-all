@@ -1,0 +1,25 @@
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                                      http://www.springframework.org/schema/util
+                                       http://www.springframework.org/schema/util/spring-util.xsd">
+              
+              
+             <bean id = "wsg" class="A"/>
+             <constructor-arg ref="b"/>
+             <bean id="b" class="B"/>
+             <constructor-arg ref="A"></constructor-arg>
+              <!--  <bean id="hi" class="com.ij.beans.frind">         
+               <property name="firstname" value="irfan"/>
+               
+               <property name="lastname" value="jalil"/>
+               
+               <property name="sername" value="patel"/>
+               <property name="d" ref="dt"/>
+              
+                -->
+                                     
+</beans>

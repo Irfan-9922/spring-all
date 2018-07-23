@@ -1,0 +1,61 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+              
+               
+              
+              
+               <bean id="tp" class ="com.ij.beans.dclass">         
+            <!--    <property name="dname" value="patel"/> -->
+                 <property name="dage" value="19"/>
+               
+                 </bean>  
+                 <!--  <bean id="t2" class ="com.ij.beans.dclass">         
+               <property name="dname" value="12"/>
+                 <property name="dage" value="19"/>
+                  
+               
+                 </bean>   -->
+                 <bean id="t4" class ="com.ij.beans.d0">         
+               <property name="player" value="irfan"/>
+                 <property name="country" value="india"/>
+                 
+                 
+                  </bean>
+                <!--  <bean id="t2" class ="com.ij.beans.tourplan">
+                 <property name = "places">
+                 <list>
+                 <value>kdflsakd</value>
+                 <value>jimmm</value>
+                 </list>
+                 </property>
+                 </bean> 
+                  <bean id="t3" class ="com.ij.beans.tourplan">
+                 <property name = "places">
+                 <list>
+                 <value>kdflsakd</value>
+                 <value>jimmm</value>
+                 </list>
+                 </property>
+                 </bean> 
+                  -->
+                 
+                 
+                 
+                 
+               <bean id="t1" class = "com.ij.beans.tclass" autowire="byType">
+               <constructor-arg ref = "tp"/>
+                <constructor-arg ref = "t4"/>
+                  
+               </bean>
+                 <context:annotation-config/>
+            
+              
+               
+                                  
+</beans>

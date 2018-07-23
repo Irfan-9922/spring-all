@@ -1,0 +1,55 @@
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                                      http://www.springframework.org/schema/util
+                                       http://www.springframework.org/schema/util/spring-util.xsd">
+              
+              
+             <!-- wtihout inhritence
+             
+               <bean id="hi" class="com.ij.beans.Bike">         
+               <property name="bikeid" value="mh24ab1248"/>
+               <property name="make" value="bajaj"/>
+               <property name="engcc" value="122"/>
+               
+                </bean>                -->      
+                <!--  <bean id="hi" class="com.ij.beans.Bike" abstract="true">         
+               
+               <property name="make" value="bajaj"/>
+               <property name="engcc" value="122"/>
+               
+                </bean>       
+                 <bean id="hi1" parent="hi">         
+               <property name="bikeid" value="mh24ab1236"/>
+             
+            
+               
+                </bean>          
+                <bean id="hi2" class="com.ij.beans.Bike" parent="hi">         
+               <property name="bikeid" value="ap12as1234"/>
+            
+                </bean>         -->  
+                <bean id="hii" class="com.ij.beans.mobile" abstract="true">
+                
+                <property name="brand" value="samsung"/>
+                </bean>
+                <bean id="hi" class="com.ij.beans.mobile" parent="hii" >
+                <property name="mname" value="j3"/>
+                <property name="prise" value="1232"/>
+                <property name="city" value="latur"/>
+                <property name="offer" value="111"/>
+                </bean>
+                <bean id="hiii" parent="hii">
+                
+                 <property name="mname" value="note 2"/>
+                <property name="prise" value="9748"/>
+                <property name="city" value="pune"/>
+                <property name="offer" value="1287"/>
+                
+                
+                
+                </bean>
+</beans>

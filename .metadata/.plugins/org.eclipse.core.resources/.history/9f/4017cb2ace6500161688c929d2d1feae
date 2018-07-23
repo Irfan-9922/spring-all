@@ -1,0 +1,27 @@
+package comm.ij.beans;
+
+public class engin {
+	private String name;
+	private String id;
+	public engin()
+	{
+		System.out.println("0 param constructor");
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "engin [name=" + name + ", id=" + id + "]";
+	}
+	public engin(String name, String id) {
+		super();
+		this.name = name;
+		this.id = id;
+	}
+	
+
+}

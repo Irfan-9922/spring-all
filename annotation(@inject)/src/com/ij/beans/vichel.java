@@ -1,0 +1,38 @@
+package com.ij.beans;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+
+@Named("vichel")
+public class vichel {
+	@Override
+	public String toString() {
+		return "vichel [eng=" + eng + "]";
+	}
+
+	private engine eng;
+	
+
+	@Inject
+//cunstructor aoutowiring 
+public vichel(engine eng)
+{
+	this.eng=eng;
+}
+
+//setter method level outowiring
+@Inject
+	public void setEng(engine eng) {
+		this.eng = eng;
+	}
+	//arbitoreroy method level outo wiring
+//	@Inject
+//	public void assign(engine eng)
+//	{
+//		this.eng=eng;
+//	}
+
+	
+	
+
+}

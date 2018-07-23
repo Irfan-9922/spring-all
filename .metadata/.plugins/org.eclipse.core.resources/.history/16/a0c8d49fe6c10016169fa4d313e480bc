@@ -1,0 +1,22 @@
+package com.ij;
+
+public class test {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long start,end;
+		start=System.currentTimeMillis();
+		System.out.println("hello this is demo");
+		try{
+			Thread.sleep(7000);
+		}
+		catch(InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+   end=System.currentTimeMillis();
+   System.out.println("program takes time to exicute "+(end-start)+"seconds");
+	}
+
+}

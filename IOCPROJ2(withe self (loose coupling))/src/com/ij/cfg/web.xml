@@ -1,0 +1,20 @@
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                                      http://www.springframework.org/schema/util
+                                       http://www.springframework.org/schema/util/spring-util.xsd">
+              
+              <bean id="fire1" class = "com.ij.beans.fire"/>
+              <bean id="blue" class="com.ij.beans.ispeed"/>
+              <bean id="speed" class= "com.ij.beans.speedpost"/>
+                   <bean id="snap" class="com.ij.beans.snapdeal">
+                      <property name ="company">
+                      <ref bean="speed"/>
+                      </property>
+                      
+             </bean>
+</beans>
+

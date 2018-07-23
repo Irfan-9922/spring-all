@@ -1,0 +1,49 @@
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean id= "dd" class=" org.springframework.web.servlet.handler.SimpleUrlHandlerMapping ">
+
+<property name="mappings">
+<props>
+
+<prop key="home.htm">ee</prop>
+<prop key="result.htm">ww</prop>
+<prop key="aboutus.htm">PVC</prop>
+<prop key="contactus.htm">PVC</prop>
+<prop key="welcome.htm">PVC</prop>
+<prop key="arth.htm">xx</prop>
+</props>
+</property>
+</bean>
+<bean id="ee" class="com.ij.controller.wecome"/>
+<bean id="ww" class="com.ij.controller.result"/>
+<bean id="xx" class="com.ij.controller.me"/>
+
+<bean id="PVC" class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
+
+
+<!-- <bean id ="PVC" class ="org.springframework.web.servlet.mvc.ParameterizableViewController">
+<property name="viewName" value="aboutus"/>
+</bean>
+<bean id="PVC2" class=" org.springframework.web.servlet.mvc.ParameterizableViewController">
+<property name="viewName" value="contactus"/>
+
+</bean>
+<bean id="pv3" class="org.springframework.web.servlet.mvc.ParameterizableViewController ">
+ -->
+<!-- <property name="viewName" value="welcome"/> -->
+
+
+<bean id="ss" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/WEB-INF/pages/"/>
+<property name="suffix" value=".jsp"/>
+
+
+</bean>
+</beans>

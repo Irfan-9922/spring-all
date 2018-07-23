@@ -1,0 +1,45 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+              
+              <!-- <bean id="dtdc" class = "com.ij.beans.DTDC"/>
+              <bean id="bluedart" class="com.ij.beans.BlueDart"/>
+              <bean id="fstd" class= "com.ij.beans.fastdragun"/>
+                   <bean id="fpk" class="com.ij.beans.Flipkart">
+                      <property name ="courier">
+                      <ref bean="fstd"/>
+                      </property>
+                      
+             </bean> -->
+            
+            <bean id ="home1" class="com.ij.beans.home">
+            <constructor-arg name ="fname" value="zoomba"/>
+                      
+                        <constructor-arg name="mname" value="dunmab"/>
+                     
+           </bean>
+             <bean id ="home11" class="com.ij.beans.home">
+            <constructor-arg name ="fname" value="zoomba"/>
+                      
+                        <constructor-arg name="mname" value="dunmab"/>
+                     
+           </bean>
+             <bean id="stu" class = "com.ij.beans.Student_detail" autowire="constructor">
+             <constructor-arg ref="home1"/>
+           
+            <property name="no" value="123"/>
+            <property name="name" value="irfan"/>
+            <property name="add" value="faradapur"/>
+                     
+                        
+                 
+             </bean>
+               <context:component-scan base-package="com.ij.beans"/>
+                     
+</beans>
+

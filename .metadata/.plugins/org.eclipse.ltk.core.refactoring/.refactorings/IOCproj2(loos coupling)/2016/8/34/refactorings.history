@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;web.xml&apos; to &apos;sp(1)first proj/src/com.ij.cfg&apos;&#x0D;&#x0A;- Original project: &apos;IOCproj2(loos coupling)&apos;&#x0D;&#x0A;- Destination element: &apos;sp(1)first proj/src/com.ij.cfg&apos;&#x0D;&#x0A;- Original element: &apos;web.xml&apos;" description="Copy file" destination="=sp\(1)first proj/src&lt;com.ij.cfg" element1="src/com/ij/cfg/web.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1471556441123" units="0" version="1.0"/>
+</session>

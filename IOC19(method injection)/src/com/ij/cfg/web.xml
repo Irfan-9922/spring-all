@@ -1,0 +1,22 @@
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                       http://www.springframework.org/schema/beans/spring-beans.xsd
+                                      http://www.springframework.org/schema/util
+                                       http://www.springframework.org/schema/util/spring-util.xsd">
+              
+             <bean id="b" class = "cm.ij.beans.info">
+             <replaced-method name="contact" replacer="mr">
+             </replaced-method>
+                      
+             </bean>
+             <bean id = "mr" class ="cm.ij.beans.info1">
+             <property name = "feess" value ="10"/>
+             
+             
+             
+             </bean>
+</beans>
+

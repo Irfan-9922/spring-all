@@ -1,0 +1,2 @@
+${msg}
+from result page

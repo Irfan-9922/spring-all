@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ij.cfg&apos; to &apos;12-5-17Annotation-pointcutt-example/src&apos;&#x0D;&#x0A;- Original project: &apos;11-5-17&apos;&#x0D;&#x0A;- Destination element: &apos;12-5-17Annotation-pointcutt-example/src&apos;&#x0D;&#x0A;- Original element: &apos;11-5-17/src/com.ij.cfg&apos;" description="Copy package" destination="=12-5-17Annotation-pointcutt-example/src" element1="/src&lt;com.ij.cfg" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1494466249282" version="1.0"/>
+</session>

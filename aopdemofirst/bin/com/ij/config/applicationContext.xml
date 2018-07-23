@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  
+<bean id="target" class="com.ij.service.calculet"/>
+<bean id="pmAdvice" class="com.ij.aspect.performence"/>
+<bean id="bean" class=" org.springframework.aop.framework.ProxyFactoryBean">
+<property name="target" ref="target"/>
+<property name="interceptorNames">
+<list>
+<value>pmAdvice</value>
+</list>
+</property>
+</bean>
+ </beans>

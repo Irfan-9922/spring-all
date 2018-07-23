@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;17-4-17 may demo on callbackinterface&apos;&#x0D;&#x0A;- Original project: &apos;17-4-17 may demo on callbackinterface&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.ij.dao.stdao.java&#x0D;&#x0A;     17-4-17 may demo on callbackinterface/src/com.ij.empbo&#x0D;&#x0A;     17-4-17 may demo on callbackinterface/src/com.ij.empdto&#x0D;&#x0A;     17-4-17 may demo on callbackinterface/src/com.nt.cfgs&#x0D;&#x0A;     17-4-17 may demo on callbackinterface/src/test" description="Delete elements" element1="/src&lt;com.ij.dao{stdao.java" element2="/src&lt;test" element3="/src&lt;com.nt.cfgs" element4="/src&lt;com.nt" element5="/src&lt;com.ij.empdto" element6="/src&lt;com.ij.empbo" elements="6" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1481668132693" subPackages="false" version="1.0"/>
+</session>

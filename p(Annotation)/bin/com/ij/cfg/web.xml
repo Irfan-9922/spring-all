@@ -1,0 +1,51 @@
+ <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+              
+               
+             
+            <!--  <bean id ="vc" class="com.ij.beans.vichel" abstract="true">
+              
+             <property name="brand" value="herly devidson"/> 
+              </bean>
+             <property name="mname" value="thunder serv"/>
+             <property name="prise" value="1100010"/>
+             <property name="cc" value="300cc"/>
+             
+          
+          
+              <property name="brand" value="herly devidson"/> 
+             
+             </bean>
+             
+             
+             
+             <bean id="vn" class="com.ij.beans.vichel" parent="vc" scope="prototype">
+             
+              <property name="mname" value="thunderserv"/>
+             <property name="prise" value="110928"/>
+             <property name="cc" value="370cc"/>
+             </bean>
+               
+               <bean id="vn" class="com.ij.beans.vichel" parent="vc">
+             
+              <property name="mname" value="glaidator"/>
+             <property name="prise" value="1106778"/>
+             <property name="cc" value="302cc"/>
+             </bean>
+             <bean id="vn" class="com.ij.beans.vichel" parent="vc">
+             
+              <property name="mname" value="glaidator"/>
+             <property name="prise" value="1106778"/>
+             <property name="cc" value="302cc"/>
+             </bean>
+               <context:annotation-config/>
+                                   -->
+                                   <context:component-scan base-package="com.ij.beans"/>
+</beans>
+ 

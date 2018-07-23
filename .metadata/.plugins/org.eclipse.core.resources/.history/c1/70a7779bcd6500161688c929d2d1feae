@@ -1,0 +1,58 @@
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                                      http://www.springframework.org/schema/util
+                                       http://www.springframework.org/schema/util/spring-util.xsd">
+              
+               <bean id="tp" class ="com.ij.beans.engin">         
+               <property name =" name" value="java"/>
+               <property name="id" value="123"/>
+               </bean>
+              
+              <!--  <bean id="tp" class ="com.ij.beans.tourplan">         
+               <property name =" places">
+               <list>
+               <value>pune</value>
+               <value>lonavla</value>
+               <value>mumbai</value>
+               <value>ajmer</value>
+               <value>panji</value>
+               
+               </list>
+               </property>
+                 </bean>  
+                 
+                 
+                 
+                  
+                 <bean id="t2" class ="com.ij.beans.tourplan">
+                 <property name = "places">
+                 <list>
+                 <value>kdflsakd</value>
+                 <value>jimmm</value>
+                 </list>
+                 </property>
+                 </bean> 
+                  <bean id="t3" class ="com.ij.beans.tourplan">
+                 <property name = "places">
+                 <list>
+                 <value>kdflsakd</value>
+                 <value>jimmm</value>
+                 </list>
+                 </property>
+                 </bean> 
+                 
+                 
+                 
+                 
+                  -->
+               <bean id="vi" class = "com.ij.beans.vichel" autowire= "constructor">
+               <constructor-arg ref = "tp"/>
+               </bean>
+              
+               
+                                  
+</beans>

@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="wwww" class="com.ij.controller.controller/">
+<bean id="hm" class=" org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+<property name="mappings">
+<props>
+
+<prop key="hh.htm">wwww</prop>
+
+</props>
+
+
+</property>
+
+
+
+</bean>
+<bean id="vr" class=" org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/WEB-INF/pages/"/>
+<property name="suffix" value=".jsp"/>
+
+</bean>

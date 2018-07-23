@@ -1,0 +1,63 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+              
+         <!--      
+               <bean id="t2" class ="com.ij.bean.dcountery">         
+               <property name="name" value="patel"/>
+                  <property name="age" value="19"/> 
+                 <property name="phno" value="779848"/>
+               
+                 </bean>   -->
+                  <bean id="t3" class ="com.ij.bean.dcountery">         
+             <!--   <property name="cname" value="india"/> -->
+                 <property name="csport" value="cricket"/>
+                 <qualifier value="e"/>
+                   
+             
+                 </bean>  
+                <bean id="t4" class ="com.ij.bean.dcountery">         
+               <property name="cname" value="pakistan"/>
+                 <property name="csport" value="cricket"/>
+                 
+                 
+               
+                 </bean>  
+                 
+                 
+                 
+                  
+                <!--  <bean id="t2" class ="com.ij.beans.tourplan">
+                 <property name = "places">
+                 <list>
+                 <value>kdflsakd</value>
+                 <value>jimmm</value>
+                 </list>
+                 </property>
+                 </bean> 
+                  <bean id="t3" class ="com.ij.beans.tourplan">
+                 <property name = "places">
+                 <list>
+                 <value>kdflsakd</value>
+                 <value>jimmm</value>
+                 </list>
+                 </property>
+                 </bean> 
+                  -->
+                 
+                 
+                 
+                 
+               <bean id="t1" class = "com.ij.bean.tclass" autowire="byName">
+           
+                <constructor-arg ref = "t3"/> 
+             
+               </bean>
+              <context:annotation-config/>
+                                  
+</beans>

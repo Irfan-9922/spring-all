@@ -1,0 +1,72 @@
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                                      http://www.springframework.org/schema/util
+                                       http://www.springframework.org/schema/util/spring-util.xsd">
+              
+              
+              
+               <bean id="tp" class ="com.ij.beans.dcaption">         
+               <property name="cr" value="deviler"/>
+                 <property name="fb" value="messi"/>
+                <property name="bd" value="saina"/>
+                <property name="hk" value="dhanraj pille"/>
+               
+                 </bean>  
+                  <bean id="t2" class ="com.ij.beans.dteam">         
+               <property name="cricket" value="india"/>
+               <property name="football" value="brazil"/>
+               <property name="badminton" value="china"/>
+               <property name="hockey" value="pakistan"/>
+            
+                  
+               
+                 </bean>  
+                 
+                 <bean id="t3" class ="com.ij.beans.dplayer">         
+               <property name="name" value="sachin"/>
+               <property name="age" value="44"/>
+               <property name="country" value="india"/>
+              
+            
+                  
+               
+                 </bean>  
+                 
+                 
+                  
+                <!--  <bean id="t2" class ="com.ij.beans.tourplan">
+                 <property name = "places">
+                 <list>
+                 <value>kdflsakd</value>
+                 <value>jimmm</value>
+                 </list>
+                 </property>
+                 </bean> 
+                  <bean id="t3" class ="com.ij.beans.tourplan">
+                 <property name = "places">
+                 <list>
+                 <value>kdflsakd</value>
+                 <value>jimmm</value>
+                 </list>
+                 </property>
+                 </bean> 
+                  -->
+                 
+                 
+                 
+                 
+               <bean id="t1" class = "com.ij.beans.tclass" autowire="byName">
+               <constructor-arg ref = "t2"/>
+              
+                <constructor-arg ref = "tp"/>
+                <constructor-arg ref = "t3"/>
+               </bean>
+              
+              
+               
+                                  
+</beans>

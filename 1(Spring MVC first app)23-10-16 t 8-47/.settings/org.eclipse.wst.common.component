@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="1(Spring MVC first app)23-10-16 t 8-47">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="1Spring_MVC_first_app23-10-16_t_8-47"/>
+        <property name="java-output-path" value="/1(Spring MVC first app)23-10-16 t 8-47/build/classes"/>
+    </wb-module>
+</project-modules>

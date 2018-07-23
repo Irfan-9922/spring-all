@@ -1,0 +1,33 @@
+/**JAVABOSS @COPYWRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package DEMO;
+
+import java.lang.reflect.Method;
+
+import org.springframework.aop.support.DynamicMethodMatcherPointcut;
+
+import COM.service.service;
+
+/**
+ * @author :IRFAN
+ *TIME:2:23:28 am
+ * DATE:11-May-2017
+ *PROJECTNAME:11--5-17POINTCUTS
+ */
+public class dyna extends DynamicMethodMatcherPointcut{
+
+	/* (non-Javadoc)
+	 * @see org.springframework.aop.MethodMatcher#matches(java.lang.reflect.Method, java.lang.Class, java.lang.Object[])
+	 */
+	@Override
+	public boolean matches(Method method, Class<?> cl, Object[] m1) {
+		// TODO Auto-generated method stub
+		if(method==service.class && method.getName().equals("go")){
+		return true;
+		}
+		else
+			return false;
+	}
+
+}

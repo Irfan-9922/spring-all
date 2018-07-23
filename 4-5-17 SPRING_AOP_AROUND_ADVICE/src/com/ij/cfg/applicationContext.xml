@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="target" class="com.ij.service.calculet"/>
+<bean id="nisar" class="com.ij.aspect.Aspect_Test"/>
+<bean id="irfan" class="com.ij.aspect.Aspect_Test_After_Advice"/>
+<bean id="bf" class="com.ij.aspect.Aspect_Test_Befor_advice"></bean>
+<bean id="pmadvice" class=" org.springframework.aop.framework.ProxyFactoryBean">
+
+
+<property name="target" ref="target"/>
+<property name="interceptorNames">
+<list>
+<value>irfan</value>
+<value>nisar</value>
+<value>bf</value>
+</list>
+</property>
+</bean>
+</beans>

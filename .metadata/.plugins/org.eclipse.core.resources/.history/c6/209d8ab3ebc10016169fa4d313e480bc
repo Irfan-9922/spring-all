@@ -1,0 +1,38 @@
+package com.ij;
+
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class test {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		long start,end;
+		Calendar cal=Calendar.getInstance();
+		System.out.println("enter the your birth year");
+		int start1=sc.nextInt();
+		int current=cal.get(Calendar.YEAR);
+		System.out.println("your bate of birth::::"+start1);
+		System.out.println("your age is::"+current);
+		System.out.println("now your age is "+(current-start1));
+		System.out.println("now your age is "+(current-start1)*12+"months you livle in earth");
+		System.out.println("now your age is "+(current-start1)*12*24+"hours you are live in this earth");
+		System.out.println("now your age is "+(current-start1)*12*24*60+"minuts you spend in earth");
+		start=System.currentTimeMillis();
+		int s=24*60;
+		System.out.println("sssss"+s);
+		System.out.println("hello this is demo");
+		try{
+			Thread.sleep(700);
+		}
+		catch(InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+   end=System.currentTimeMillis();
+   System.out.println("program takes time to exicute "+(end-start)+"seconds");
+	}
+
+}

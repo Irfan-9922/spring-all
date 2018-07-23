@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+            
+              <context:component-scan base-package="com.ij.beans"/>  
+              <!-- <bean id ="vichel" class="com.ij.beans.vichel"/>
+             <bean id ="engn" class ="com.ij.beans.engine">
+             
+             <property name="engid" value="212"/>
+             <property name="type" value="rockel"/>
+             
+             </bean>
+             <bean id ="tyr" class="com.ij.beans.tyre">
+             
+              <property name="name" value="212"/>
+             <property name="prise" value="rockel"/>
+             
+             </bean>
+              -->
+           
+</beans>
